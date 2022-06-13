@@ -1,4 +1,4 @@
-package com.broadview.coupon.pojo;
+package com.broadview.coupon.beans.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,10 +10,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CouponInfo {
-    private long id;
-    private long templateId;
-    private long userId;
-    private long shopId;
+    private Long id;
+    private Long templateId;
+    private Long userId;
+    private Long shopId;
     private Integer status;
     private TemplateInfo template;
 }

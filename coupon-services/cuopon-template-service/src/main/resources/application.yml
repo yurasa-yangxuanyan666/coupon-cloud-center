@@ -1,10 +1,21 @@
 spring:
+  application:
+    name: coupon-template-service
   datasource:
-    url: jdbc:oracle:thin:@localhost:1521:helowin
-    username: root
-    password: 123456
-    driver-class-name: oracle.jdbc.driver.OracleDriver
-
+    username: broadviewapp
+    password: Broadviewpwd
+    url: jdbc:mysql://127.0.0.1:3306/broadview_coupon_db?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+    &useSSL=false@allowPublicKeyRetrieval=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      connection-timeout: 20000
+      idle-timeout: 20000
+      maximum-pool-size: 20
+      minimum-idle: 5
+      auto-commit: true
+      max-lifetime: 30000
+      pool-name: BroadviewCouponHikari
 
 
 
